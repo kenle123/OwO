@@ -1,13 +1,11 @@
 #Reads in the input.txt file
 def readFile():
-
-	#Reads in the file
 	with open('input.txt') as f:
 		read_data = f.read()
 	f.close()
 	return read_data
 
-#Write the modified text to a file
+#Write the modified text to output.txt
 def writeFile(str):
 	with open('output.txt', 'w') as f:
 		f.write(str)
@@ -18,7 +16,7 @@ def readFromUserInput():
 	userInput = input('Enter text to be OwO: ')
 	return userInput
 
-#Converts a string into a list and changes all r/l to w -> OwO
+#Converts string parameter into a list and changes all r/l to w -> OwO
 def convertToOwO(beforeText):
 	text = list(beforeText)
 
@@ -26,17 +24,20 @@ def convertToOwO(beforeText):
 		if(text[i] == 'l' or text[i] == 'r'):
 			text[i] = 'w'
 
+		if(text[i] == 'L' or text[i] == 'R'):
+			text[i] = 'W'
+
 	#Changes modified list back to string
-	str = ''.join(text)
+	OwoText = ''.join(text)
 
-	return str
+	return OwoText
 
+#Prints resulting OwO
 def printOwO(string):
 	print(string)
 
 #Main Function
 def main():
-
 	flag = True
 
 	while(flag):
@@ -49,8 +50,10 @@ def main():
 		print("|   3. Exit                       |");
 		print("-----------------------------------");
 
+		#Get user input for their menu choice
 		menuChoice = int(input("Enter your choice(1,2, or 3): "))
 
+		#User decides to read/write to a file
 		if(menuChoice == 1):
 			BaseTxt = readFile()
 			OwOTextRead = convertToOwO(BaseTxt)
@@ -58,11 +61,13 @@ def main():
 
 			print("Successfully Wrote to File")
 
+		#User decides to use user input
 		elif(menuChoice == 2):
 			UserInput = readFromUserInput()
 			OwOTextInput = convertToOwO(UserInput)
 			printOwO(OwOTextInput)
 
+		#User exits program
 		else:
 			flag = False
 
