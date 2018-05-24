@@ -1,6 +1,6 @@
 # OwO
 
-OwO is a script that allows a user to change a text into OwO form. OwO form results in all the 'r' and 'l' characters to be changed to 'w'.
+OwO is a script that allows a user to change text into OwO form. OwO form results in all the 'r' and 'l' characters to be changed to 'w'.
 
 # Installing
 
