@@ -8,6 +8,9 @@ OwO is a script that allows a user to change text into OwO form. OwO form result
 * Text Editor
 * Terminal
 
+1. Click on the Clone or download button on Github
+2. Click on the Download ZIP button
+
 ### To Run
 1. Open Terminal
 2. Change directory to where the folder is
