@@ -12,6 +12,6 @@ OwO is a script that allows a user to change a text into OwO form. OwO form resu
 1. Open Terminal
 2. Change directory to where the folder is
 3. Use the following command:
-	' ' ' bash
-	$ python3 OwO.py
-	' ' '
+``` bash
+$ python3 OwO.py
+```
