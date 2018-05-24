@@ -1,4 +1,4 @@
-#Reads in the input.txt file and changes all r/l characters to w -> OwO
+#Reads in the input.txt file
 def readFile():
 
 	#Reads in the file and converts to list since strings are immutable
@@ -23,23 +23,27 @@ def writeFile(str1):
 		f.write(str1)
 
 def readFromUserInput():
-	beforeText = input('Enter text to be OwO: ')
+	userInput = input('Enter text to be OwO: ')
+	convertToOwO(userInput)
+
+
+#Converts a string into a list and changes all r/l to w -> OwO
+def convertToOwO(beforeText):
 	text = list(beforeText)
 
 	for i in range(len(text)):
 		if(text[i] == 'l' or text[i] == 'r'):
 			text[i] = 'w'
 
-	#Changes modified list to string type
+	#Changes modified list back to string
 	str = ''.join(text)
 	print(str)
 
-
 #Main Function
 def main():
-	#readFromUserInput()
-	updatedTxt = readFile()
-	writeFile(updatedTxt)
+	readFromUserInput()
+	#updatedTxt = readFile()
+	#writeFile(updatedTxt)
 
 
 if __name__ == "__main__":
