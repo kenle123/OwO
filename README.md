@@ -2,12 +2,13 @@
 
 OwO is a script that allows a user to change text into OwO form. OwO form results in all the 'r' and 'l' characters to be changed to 'w'.
 
-# Installing
+# Installation
 
 ### Prerequisites
 * Text Editor
 * Terminal
 
+### To Install
 1. Click on the Clone or download button on Github
 2. Click on the Download ZIP button
 
