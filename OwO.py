@@ -55,16 +55,16 @@ def main():
 
 		#User decides to read/write to a file
 		if(menuChoice == 1):
-			BaseTxt = readFile()
-			OwOTextRead = convertToOwO(BaseTxt)
+			baseTxt = readFile()
+			OwOTextRead = convertToOwO(baseTxt)
 			writeFile(OwOTextRead)
 
 			print("Successfully Wrote to File")
 
 		#User decides to use user input
 		elif(menuChoice == 2):
-			UserInput = readFromUserInput()
-			OwOTextInput = convertToOwO(UserInput)
+			userInput = readFromUserInput()
+			OwOTextInput = convertToOwO(userInput)
 			printOwO(OwOTextInput)
 
 		#User exits program
